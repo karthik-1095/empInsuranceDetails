@@ -1,0 +1,94 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "empInsuranceDetails",
+    "description" : "empInsuranceDetails service"
+  },
+  "host" : "localhost:2906",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/empinsurancedetails" : {
+      "post" : {
+        "summary" : "postEmpInsuranceDetails",
+        "description" : "postEmpInsuranceDetails",
+        "operationId" : "post-empinsurancedetails",
+        "consumes" : [ "application/xml" ],
+        "produces" : [ "application/xml" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/empInsuranceRoot"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a string to be returned",
+            "schema" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "empInsurance" : {
+      "type" : "object",
+      "required" : [ "employeeID", "empInsuranceDetails" ],
+      "properties" : {
+        "employeeID" : {
+          "type" : "string"
+        },
+        "empInsuranceDetails" : {
+          "$ref" : "#/definitions/insuranceDetailsType"
+        }
+      }
+    },
+    "empInsuranceRoot" : {
+      "type" : "object",
+      "properties" : {
+        "empInsurance" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/empInsurance",
+            "uniqueItems" : false
+          }
+        }
+      }
+    },
+    "insuranceDetailsType" : {
+      "type" : "object",
+      "required" : [ "HolderName", "SumInsured", "DOB", "ValidTill", "Gender", "PolicyID" ],
+      "properties" : {
+        "HolderName" : {
+          "type" : "string",
+          "minLength" : 1,
+          "maxLength" : 100
+        },
+        "PolicyID" : {
+          "type" : "string"
+        },
+        "Gender" : {
+          "type" : "string"
+        },
+        "DOB" : {
+          "type" : "string",
+          "format" : "date"
+        },
+        "SumInsured" : {
+          "type" : "number",
+          "format" : "float"
+        },
+        "ValidTill" : {
+          "type" : "string",
+          "format" : "date"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{"records": [{
+    "jsonSchemaLocation": "/emp_insurance_details/Service Descriptors/emp_insurance_details.emp_insurance_details-empInsuranceDetails.json",
+    "conversionType": "linked",
+    "xsdSchemaTargetNamespace": "http://www.eniquesolutions.com/emp_details"
+}]}
