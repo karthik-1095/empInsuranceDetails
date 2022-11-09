@@ -12,10 +12,10 @@
   <packaging>bwear</packaging>
   <properties>
     <backup>false</backup>
-    <externalProfile>false</externalProfile>
+    <externalProfile>true</externalProfile>
     <appNodeDesc></appNodeDesc>
     <deployToAdmin>true</deployToAdmin>
-    <appNodeConfig_bw.rest.docApi.port_value>7100</appNodeConfig_bw.rest.docApi.port_value>
+    <appNodeConfig_bw.rest.docApi.port_value>7207</appNodeConfig_bw.rest.docApi.port_value>
     <agentPassword></agentPassword>
     <externalProfileLoc></externalProfileLoc>
     <truststorePassword></truststorePassword>
@@ -34,14 +34,14 @@
     <domainDesc></domainDesc>
     <keystorePassword></keystorePassword>
     <bw.Home>\bw\6.8</bw.Home>
-    <httpPort>1947</httpPort>
+    <httpPort>1997</httpPort>
     <profile>default.substvar</profile>
     <restartAppNode>false</restartAppNode>
     <appNode>emp_insurance_details-AppNode</appNode>
     <failIfNoTests>false</failIfNoTests>
     <truststorePath></truststorePath>
     <keystorePath></keystorePath>
-    <domain>empPOC-Domain</domain>
+    <domain>employeePOC-Domain</domain>
     <agentPort>8079</agentPort>
     <tibco.Home>C:\BW6_Home</tibco.Home>
   </properties>
