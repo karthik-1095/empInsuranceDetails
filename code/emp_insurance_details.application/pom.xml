@@ -15,12 +15,12 @@
     <externalProfile>false</externalProfile>
     <appNodeDesc></appNodeDesc>
     <deployToAdmin>true</deployToAdmin>
-    <appNodeConfig_bw.rest.docApi.port_value>7300</appNodeConfig_bw.rest.docApi.port_value>
+    <appNodeConfig_bw.rest.docApi.port_value>7400</appNodeConfig_bw.rest.docApi.port_value>
     <agentPassword></agentPassword>
     <externalProfileLoc></externalProfileLoc>
     <truststorePassword></truststorePassword>
     <agentUsername></agentUsername>
-    <appSpace>empInsuranceDetails-AppSpace</appSpace>
+    <appSpace>emp_insurance_details-AppSpace</appSpace>
     <agentSSL>false</agentSSL>
     <backupLocation></backupLocation>
     <earUploadPath></earUploadPath>
@@ -34,10 +34,10 @@
     <domainDesc></domainDesc>
     <keystorePassword></keystorePassword>
     <bw.Home>\bw\6.8</bw.Home>
-    <httpPort>1998</httpPort>
+    <httpPort>1999</httpPort>
     <profile>default.substvar</profile>
     <restartAppNode>false</restartAppNode>
-    <appNode>empInsuranceDetails-AppNode</appNode>
+    <appNode>emp_insurance_details-AppNode</appNode>
     <failIfNoTests>false</failIfNoTests>
     <truststorePath></truststorePath>
     <keystorePath></keystorePath>
